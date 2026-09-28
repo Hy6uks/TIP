@@ -6,7 +6,7 @@ private:
     int n;
 
 public:
-    NextEven(int value) : n(value) {}
+    Nextchet(int value) : n(value) {}
 
     int get() const {
         int parity = ((n % 2) + 2) % 2;
