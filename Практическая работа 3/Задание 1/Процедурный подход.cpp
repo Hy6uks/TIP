@@ -1,6 +1,6 @@
 #include <cmath>
 #include <iostream>
-namespase std;
+using namespace std;
 
 int main() {
   double a, b;
