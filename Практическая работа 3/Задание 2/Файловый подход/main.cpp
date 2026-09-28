@@ -1,16 +1,17 @@
+#include <iostream>
 #include <fstream>
+#include "f.h"
 using namespace std;
 
-int main() {
-    ifstream fin("input.txt");
-    ofstream fout("output.txt");
+int main(){
+    ifstream in("input.txt");
+    ofstream out("output.txt");
 
     int n;
-    fin >> n;
+    in >> n;
+    out << Nextchet(n);
 
-    int parity = ((n % 2) + 2) % 2;
-
-    fout << n + 2 - parity;
-
+    in.close();
+    out.close();
     return 0;
 }
