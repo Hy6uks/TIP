@@ -1,0 +1,1 @@
+int Nextchet(int n);
