@@ -2,7 +2,7 @@
 using namespace std;
 
 int nextchet(int n) {
-    return n + 2 - n % 2;
+    return (n / 2 + 1) * 2;
 }
 
 int main() {
