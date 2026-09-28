@@ -2,13 +2,15 @@
 #include <cmath>
 using namespace std;
 
+double hypotenuse(double a, double b) {
+    return sqrt(a * a + b * b);
+}
+
 int main() {
-    int a, b;
-    cin >> a;
-    cin >> b;
-    double r = pow(a, 2); 
-    double d = pow(b, 2);
-    double c = sqrt(r + d); 
-    cout << "Гипотенуза = " << c;
+    double a, b;
+    cout << "Введите катеты a и b: ";
+    cin >> a >> b;
+    
+    cout << "Гипотенуза = " << hypotenuse(a, b) << endl;
     return 0;
- }
+}
